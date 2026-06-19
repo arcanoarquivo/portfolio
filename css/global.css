@@ -1,0 +1,16 @@
+/* Reseta margens padrões do navegador */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do fundo e da fonte do site */
+body {
+    background-color: #24181a;
+    /* Fundo quase preto (Dark Mode) */
+    color: #d4d4d4;
+    /* Texto principal branco */
+    padding: 20px;
+    /* Afasta o conteúdo das bordas da tela */
+}

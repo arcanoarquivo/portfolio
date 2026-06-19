@@ -1,0 +1,172 @@
+/* ==========================================
+   Container Principal (.card-arcano-principal)
+   ========================================== */
+
+.card-arcano-principal {
+    background-color: #0a0a0a;
+    /* Cor de fundo escura e elegante */
+    border: 3px dotted rgb(84, 143, 111);
+    /* Borda sutil para dar profundidade */
+    padding: 8px;
+    /* Espaço interno para o texto não colar na borda */
+    /* Um efeito sutil de sombra para o card parecer flutuar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dados-referencia {
+    color: #686767;
+    font-family: monospace;
+    font-size: 11px;
+
+}
+
+/* ==========================================
+   Card Bem-Vindo (.card-arcano-bem-vindo)
+   ========================================== */
+
+   .card-arcano-bem-vindo {
+    background-color: #0a0a0a;
+    /* Cor de fundo escura e elegante */
+    border: 2px solid #15221a;
+
+    /* Borda sutil para dar profundidade */
+    padding: 3px;
+    /*estilo */
+    
+    overflow: hidden;
+    white-space: nowrap;
+   }
+
+   .texto-led{
+    display: inline-block;
+    padding-left: 100%;
+    animation: painelLed 8s linear infinite;
+
+    color: #1aff1a;
+    font-family: monospace;
+    font-weight: bold;
+   }
+
+   @keyframes painelLed{
+    0%{
+        transform: translate(0, 0);
+    }
+
+    100%{
+        transform: translate(-100%, 0);
+    }
+   }
+
+   /* ==========================================
+   Card Perfil (.card-perfil)
+   ========================================== */
+   .card-perfil{
+    display: flex;
+    background-color: #0a0a0a;
+    border: 2px solid #15221a;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+
+/* --- COLUNA 1: FOTO --- */
+.perfil-coluna-foto {
+    display: flex;
+    flex-direction: column;
+    /* Empilha a tag, a foto e o status verticalmente */
+    width: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.usuario-tag {
+    color: #32dd7f;
+    font-family: monospace;
+    margin-bottom: 5px;
+
+}
+
+.perfil-foto {
+    width: 100%;
+    border: 2px solid #24181a;
+    filter: grayscale(50%) sepia(20%) hue-rotate(85deg);
+    /* Efeito esverdeado na foto */
+}
+
+.status-barra {
+    background-color: #0a2f1d;
+    color: #20a35b;
+    text-align: center;
+    font-family: monospace;
+    padding: 6px;
+    margin-top: 8px;
+    border: 1px solid #20a35b;
+}
+
+/* --- COLUNA 2: INFORMAÇÕES (MEIO) --- */
+.perfil-coluna-info {
+    flex: 1;
+    /* Faz essa coluna ocupar todo o espaço do meio */
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-titulo {
+    color: #2f4441;
+    font-family: 'Courier New', monospace;
+    border-bottom: 1px solid #20a35b;
+    padding-bottom: 5px;
+}
+
+.perfil-dados {
+    color: #a3a3a3;
+    font-family: monospace;
+}
+
+.destaque-nome {
+    height: fit-content;
+    width: fit-content;
+    background-color: #0a2f1d;
+    color: #20a35b;
+    padding: 2px 6px;
+    margin-top: 5px;
+}
+
+/* Caixas de texto internas (Estilo Likes) */
+.caixa-texto-matrix {
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid #20a35b;
+    padding: 10px;
+    background-color: #0a0a0c;
+    font-family: monospace;
+    color: #20a35b;
+    margin-top: 20px;
+}
+
+.subtitulo-caixa {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* --- COLUNA 3: EFEITO DIREITA --- */
+.perfil-coluna-efeito {
+    width: 180px;
+    border-left: 1px dashed #20a35b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.efeito-placeholder {
+    color: #0f5e30;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
