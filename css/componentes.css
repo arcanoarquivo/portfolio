@@ -3,6 +3,8 @@
    ========================================== */
 
 .card-arcano-principal {
+    width: 1000px;
+    justify-content: center;
     background-color: #0a0a0a;
     /* Cor de fundo escura e elegante */
     border: 3px dotted rgb(84, 143, 111);
@@ -61,6 +63,7 @@
    Card Perfil (.card-perfil)
    ========================================== */
    .card-perfil{
+    flex-wrap: wrap;
     display: flex;
     background-color: #0a0a0a;
     border: 2px solid #15221a;
@@ -87,6 +90,7 @@
 }
 
 .perfil-foto {
+    flex-grow: 1;
     width: 100%;
     border: 2px solid #24181a;
     filter: grayscale(50%) sepia(20%) hue-rotate(85deg);
@@ -103,9 +107,8 @@
     border: 1px solid #20a35b;
 }
 
-/* --- COLUNA 2: INFORMAÇÕES (MEIO) --- */
-.perfil-coluna-info {
-    flex: 1;
+/* --- COLUNA PARA INFORMAÇÕES --- */
+.card-info {
     /* Faz essa coluna ocupar todo o espaço do meio */
     display: flex;
     flex-direction: column;
@@ -150,21 +153,7 @@
     margin-bottom: 2px;
 }
 
-/* --- COLUNA 3: EFEITO DIREITA --- */
-.perfil-coluna-efeito {
-    width: 180px;
-    border-left: 1px dashed #20a35b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.efeito-placeholder {
-    color: #0f5e30;
-    font-family: monospace;
-    font-size: 12px;
-    text-align: center;
-}
 
 
 
