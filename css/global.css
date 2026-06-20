@@ -11,6 +11,12 @@ body {
     /* Fundo quase preto (Dark Mode) */
     color: #d4d4d4;
     /* Texto principal branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    
+    margin: 0;
     padding: 20px;
-    /* Afasta o conteúdo das bordas da tela */
+    box-sizing: border-box;
 }
