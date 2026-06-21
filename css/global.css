@@ -7,6 +7,11 @@
 
 /* Estilo do fundo e da fonte do site */
 body {
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: #24181a;
     /* Fundo quase preto (Dark Mode) */
     color: #d4d4d4;

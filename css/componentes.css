@@ -2,8 +2,8 @@
    Container Principal (.card-arcano-principal)
    ========================================== */
 .card-arcano-principal {
-    width: 900px;
-    min-width: 900px;
+    width: 1000px;
+    min-width: 1000px;
     padding: 8px;
     background-color: #0a0a0a;
     border: 3px dotted rgb(84, 143, 111);
@@ -49,7 +49,7 @@
 /* ==========================================
    Card Perfil (.card-perfil)
    ========================================== */
-.card-perfil {
+.card {
     display: flex;
     gap: 20px;
     margin-top: 10px;
@@ -94,6 +94,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    margin-left: 5px;
 }
 
 .card-info-titulo {
@@ -148,6 +149,8 @@
     /* Pequeno ajuste para alinhar com a caixa */
 }
 
+
+/* --- BANNER --- */
 .banner{
     width: 250px;
     height: 115px;
@@ -165,4 +168,81 @@
     /* Dá um espaço sutil entre o GIF e o texto */
     margin-top: 15px;
     /* Afasta o bloco do texto de cima */
+}
+
+
+
+
+.lista-contatos {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* O container do item agora é clicável */
+.item-copiar {
+    font-family: monospace;
+    font-size: 13px;
+    color: #a3a3a3;
+    cursor: pointer;
+    /* Faz aparecer a mãozinha de clique */
+    user-select: none;
+    /* Impede que o texto fique azul/selecionado ao clicar rápido */
+    display: block;
+}
+
+/* Quando passar o mouse, a linha inteira reage */
+.item-copiar:hover .texto-contato {
+    color: #1aff1a;
+    /* O usuário/email acende em verde */
+}
+
+.item-copiar:hover .aviso-copiado {
+    color: #ffffff;
+    /* O aviso clareia um pouco indicando ação */
+}
+
+/* Estilo sutil para o aviso lateral */
+/* 1. Estado Normal (Mouse fora, não copiado) */
+.aviso-copiado {
+    color: #686767;
+    /* Cinza sutil */
+    font-size: 11px;
+    transition: color 0.2s ease;
+}
+
+/* 2. Estado de Hover (Quando passa o mouse, ANTES de copiar) */
+.item-copiar:hover .aviso-copiado {
+    color: #ffffff;
+    /* Fica branco perfeito */
+}
+
+/* 3. Estado de Sucesso (Quando a classe .copiado entra em ação) */
+/* O "color: #1aff1a !important" garante que, enquanto estiver copiado, ele fique verde mesmo com o mouse em cima */
+.aviso-copiado.copiado {
+    color: #1aff1a !important;
+    font-weight: bold;
+}
+
+.prefixo-matrix {
+    color: #20a35b;
+    margin-right: 5px;
+    font-weight: bold;
+
+
+
+}
+.caixa-texto-contato{
+    width: 250px;
+    height: 120px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #0a0a0c;
+    border: 1px solid #20a35b;
+    color: #20a35b;
+    font-family: monospace;
 }
